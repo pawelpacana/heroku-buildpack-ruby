@@ -1,7 +1,10 @@
 #!/bin/sh
 
 set -x
-env
+
+echo $1
+echo $2
+echo $3
 
 if [ -z "$CNB_STACK_ID" ]; then
   # v2 API
