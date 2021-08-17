@@ -11,12 +11,10 @@ $:.unshift File.expand_path("../../../lib", __FILE__)
 require "language_pack"
 require "language_pack/shell_helpers"
 
-APP_DIR = ARGV[0]
+APP_DIR = File.join(ARGV[0], "rails_application")
 p APP_DIR
 
 begin
-  p ARGV 
-  
   LanguagePack::Instrument.trace 'compile', 'app.compile' do
     LanguagePack::ShellHelpers.initialize_env(ARGV[2])
     if pack = LanguagePack.detect(APP_DIR, ARGV[1])
