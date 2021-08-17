@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 LAYERS_DIR=$1
 PLATFORM_DIR=$2
 ENV_DIR="$PLATFORM_DIR/env"
