@@ -27,7 +27,7 @@ heroku_buildpack_ruby_install_ruby "$BIN_DIR" "$BUILDPACK_DIR"
 
 # EOM
 
-  compile_buildpack_v2 "$BUILD_DIR" "$CACHE_DIR" "$ENV_DIR" "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/jvm.tgz" "heroku/jvm"
-fi
+#   compile_buildpack_v2 "$BUILD_DIR" "$CACHE_DIR" "$ENV_DIR" "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/jvm.tgz" "heroku/jvm"
+# fi
 
 $heroku_buildpack_ruby_dir/bin/ruby $BIN_DIR/support/ruby_compile $@
